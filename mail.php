@@ -11,7 +11,6 @@ $email_body = "User Name: $name.\n".
 $to = "himanshudidwaniyajsk@gmail.com";
 $headers = "From: $email \r\n";
 $headers .="Reply-To:$email \r\n"; 
-mail($to, $subject, $email_body, $headers) or die("Error!");
-echo "Thank You!";
+mail($to, $subject, $email_body, $headers);
 header("Location:index.html");
 ?>
